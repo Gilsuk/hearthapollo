@@ -25,6 +25,7 @@ type Card = {
   armor: number;
   arena: boolean;
   collectable: boolean;
+  standard: boolean;
   parent: Card[];
   children: Card[];
 };
