@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/Gilsuk/hearthapollo#readme",
   "devDependencies": {
+    "@types/bluebird": "^3.5.30",
+    "@types/node": "^13.13.5",
+    "@types/sqlite3": "^3.1.6",
+    "@types/validator": "^13.0.0",
     "apollo-server": "^2.13.0",
     "typescript": "^3.8.3"
   },
