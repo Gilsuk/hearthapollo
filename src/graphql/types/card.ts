@@ -1,18 +1,19 @@
 import { GraphQLObjectType } from "graphql";
 import { Context } from "../context";
-import { Class } from "./class";
-import { Keyword } from "./keyword";
 
 type Card = {
   id: number;
   slug: string;
   class: string;
-  classed: Class[];
+  classes: string[];
   type: string;
   cardSet: string;
   rarity: string;
   race: string;
-  keywords: Keyword[];
+  keywords: {
+    name: string;
+    text: string;
+  }[];
   artist: string;
   name: string;
   text: string;
@@ -23,10 +24,11 @@ type Card = {
   health: number;
   attack: number;
   armor: number;
+  durability: number;
   arena: boolean;
   collectable: boolean;
   standard: boolean;
-  parent: Card[];
+  parents: Card[];
   children: Card[];
 };
 
